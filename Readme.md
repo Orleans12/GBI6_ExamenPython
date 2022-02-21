@@ -2,8 +2,11 @@
 IKIAM
 ##
 ## Datos personales:
+
 Vicente Fernando Quezada García
+
 C.I. 2200076665
+
 tlf: 0993669590
 # Datos del computador
 - Nombre del equipo: DESKTOP-3PK4RKE 
