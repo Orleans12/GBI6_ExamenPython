@@ -15,7 +15,7 @@ CPUs), -2.4 GHz
 - Memoria: 4 GB RAM
 - Versión de Python: [*Python 3.0 realease*](https://www.python.org/download/releases/3.0/)
 # Data usada
--- 1. Archivo: miningscience.py es un archivo .py donde se anotará las funciones usadas para el data mining desde pubmed.
--- 2. Archivo: ```2021II_GBI6_ExamenParcialPython``` será el repositorio o examen que tendrá los códigos para realizar cada ejercicio de la evaluación.
+- 1. Archivo: miningscience.py es un archivo .py donde se anotará las funciones usadas para el data mining desde pubmed.
+- 2. Archivo: ```2021II_GBI6_ExamenParcialPython``` será el repositorio o examen que tendrá los códigos para realizar cada ejercicio de la evaluación.
 
 
