@@ -28,7 +28,7 @@ def mining_pubs(tipo: str) ->pd.DataFrame:
     """
     Ep=download_pubmed('Ecuador genomics')
     
-    ID=info['IdList']
+    ID=Ep['IdList']
     liste=','.join(ID)
     Entrez.email = "vicente.quezada@est.ikiam.edu.ec"
     hand = Entrez.efetch(db="pubmed",
@@ -37,11 +37,11 @@ def mining_pubs(tipo: str) ->pd.DataFrame:
                         id=liste)
     datos = hand.read()           
     
-    if (tipo == "AD"):
+    if (tipo == "DP"):
         
         z_codes = re.findall(r'PMID-.(.+)', datos) 
         z_codes1 = re.findall(r'DP  -.(\d+)', datos) 
-        z_codes1 = [int(i) for i in zipcodes1]  
+        z_codes1 = [int(i) for i in z_codes1]  
         z_alldata = list(zip(z_codes,z_codes1))
         n_colum = ['PMID','DP_year']
     else:
@@ -77,7 +77,7 @@ def mining_pubs(tipo: str) ->pd.DataFrame:
         
     hand.close()
     Ep = pd.DataFrame(z_alldata, columns=n_colum) 
-    return info
+    return Ep
      
 
     
